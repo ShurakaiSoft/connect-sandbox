@@ -1,0 +1,21 @@
+{
+  "name": "connect-sandbox",
+  "version": "0.1.0",
+  "description": "connect-sandbox",
+  "main": "connect-server.js",
+  "scripts": {
+    "test": "echo \"No tests yet.\" && exit 1"
+  },
+  "dependencies": {
+    "connect": "latest"	  
+  },
+  "repository": "",
+  "keywords": [
+    "Node.js",
+    "Sandbox",
+    "connect"
+  ],
+  "author": "Stephen Parker",
+  "license": "BSD",
+  "readmeFilename": "README.md"
+}
