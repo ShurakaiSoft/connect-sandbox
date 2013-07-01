@@ -9,7 +9,7 @@
   "dependencies": {
     "connect": "latest"	  
   },
-  "repository": "",
+  "repository": "https://github.com/ShurakaiSoft/connect-sandbox.git",
   "keywords": [
     "Node.js",
     "Sandbox",
