@@ -3,10 +3,13 @@
  */
 
 var connect = require('connect');
-// import middleware
-var helloWorld = require('./helloWorld');
+
+var replyText = require('./replyText');
+
+var port = 1337;
+var app = connect.createServer(replyText("Hello World"));
 
 
-var app = connect.createServer(helloWorld);
-
-app.listen(1337);
+app.listen(port, function () {
+	console.log("Server Listening on port: %d", port);
+});
