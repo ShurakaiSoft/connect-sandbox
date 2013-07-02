@@ -1,6 +1,8 @@
 /**
  * A connect server that uses middleware.
  */
+var path = require('path');
+
 
 // import mittlewares
 var saveRequest = require('./saveRequest');
@@ -13,7 +15,7 @@ var version = 'v4';
 
 
 require('connect').createServer(
-	saveRequest(__dirname + '/requests'),
+	saveRequest(path.join(__dirname, '/../logs')),
 	writeHeader('X-Powered-By', 'Node'),
 	replyText("Hello World")
 ).listen(port, function () {
