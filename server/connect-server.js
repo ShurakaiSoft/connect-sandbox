@@ -1,22 +1,21 @@
 /**
- * A connect server that uses helloWorld middleware.
+ * A connect server that uses middleware.
  */
 
-var connect = require('connect');
-
 // import mittlewares
+var saveRequest = require('./saveRequest');
 var writeHeader = require('./writeHeader');
 var replyText = require('./replyText');
 
 
 var port = 1337;
-var version = 'v3';
-var app = connect.createServer(
+var version = 'v4';
+
+
+require('connect').createServer(
+	saveRequest(__dirname + '/requests'),
 	writeHeader('X-Powered-By', 'Node'),
 	replyText("Hello World")
-);
-
-
-app.listen(port, function () {
+).listen(port, function () {
 	console.log("Server %s Listening on port: %d", version, port);
 });
