@@ -5,15 +5,15 @@ var path = require('path');
 
 
 // import mittlewares
-var errorCreator = require('./faulty');
-var saveRequest = require('./saveRequest');
-var writeHeader = require('./writeHeader');
-var replyText = require('./replyText');
-var errorHandler = require('./errorHandler');
+var errorCreator = require('../lib/faulty');
+var saveRequest = require('../lib/saveRequest');
+var writeHeader = require('../lib/writeHeader');
+var replyText = require('../lib/replyText');
+var errorHandler = require('../lib/errorHandler');
 
 
 var port = 1337;
-var version = 'v6';
+var version = 'v7';
 
 
 require('connect').createServer(
