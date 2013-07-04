@@ -4,7 +4,7 @@
 var path = require('path');
 
 
-// import mittlewares
+// import middlewares
 var errorCreator = require('../lib/faulty');
 var saveRequest = require('../lib/saveRequest');
 var writeHeader = require('../lib/writeHeader');
